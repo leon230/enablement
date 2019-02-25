@@ -1,0 +1,70 @@
+{
+    "commerceSuiteVersion": "1811.1",
+    "extensions": [],
+	"useConfig": {
+		"properties": [],
+		"extensions": {
+			 "location": "/config/localextensions.xml",
+			 "exclude":  []
+		}
+    },
+	"aspects": [
+		{
+			"name": "backoffice",
+			"webapps": [
+				{
+					"name": "hac",
+					"contextPath": "/hac"
+				},
+				{
+					"name": "mediaweb",
+					"contextPath": "/medias"
+				},
+				{
+					"name": "backoffice",
+					"contextPath": "/backoffice"
+				}
+			]
+		},
+		{
+			"name": "accstorefront",
+			"webapps": [
+				{
+					"name": "mediaweb",
+					"contextPath": "/medias"
+				},
+				{
+					"name": "yacceleratorstorefront",
+					"contextPath": "/yacceleratorstorefront"
+				},
+				{
+					"name": "acceleratorservices",
+					"contextPath": "/acceleratorservices"
+				},
+				{
+					"name": "trainingstorefront",
+					"contextPath": ""
+				},
+				{
+                                        "name": "hac",
+                                        "contextPath": "/hac"
+                                }
+
+			]
+		},
+		{
+			"name": "backgroundProcessing",
+			"properties": [],
+			"webapps": [
+				{
+					"name": "hac",
+					"contextPath": ""
+				},
+				{
+					"name": "mediaweb",
+					"contextPath": "/medias"
+				}
+			]
+		}
+	]
+}
